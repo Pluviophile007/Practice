@@ -1,0 +1,33 @@
+      Pgw ----> Gy  ----- > OCS -- logic mainstaing session:- 1.5GB
+        ------> Gx -----> QOS Of Device :---->   Policy  ----->  Request :- XML message SLR -- DeviceId Sy   Counter -->OCS
+                                                                                                       SLA
+
+        Pgw :- Policy Module :-     QOS:- SLR OCS SLA (HIGH )
+
+              CCA  Pgw
+
+
+         Pgw  :- CCR --> Device id, Reseved  10MB  Initial call
+
+         Reservations from Jio 1.5 GB  current 1.5GB-10MB  reserved = 10 MB
+
+         CCR-U:- used data:- 10MB :- reserved :- 100 MB    commit used data then next it will do reservation
+          ...............
+          ..............
+          CCR-U5 :- Device subscription:- 1.5GB threshold at subscription take ACtion:- SNR = LOW
+
+          SNR :- Policy Module:- RAR to Pgw :- QOS :- LOW
+
+          device latched to low speed
+
+          ----
+
+          --->
+
+          CCR CCA OCS
+          CCR-T
+
+
+
+
+
